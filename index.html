@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>하츠네 미쿠 머리빗겨주기</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">🪮 <b>ハツネミク</b> 머리빗겨주기</div>
+  <button id="soundBtn">♫ ON</button>
+</header>
+
+<main>
+<section class="game" id="game">
+  <img class="background" src="miku-screen.png" alt="Hatsune Miku">
+
+  <div class="top-card">
+    <div class="tiny">HAIR BRUSHING ROOM</div>
+    <div class="title">오늘도 예쁘게 빗어주세요</div>
+  </div>
+
+  <div class="meters">
+    <div><span>💗 기분</span><i><em id="mood"></em></i></div>
+    <div><span>✨ 머릿결</span><i><em id="clean"></em></i></div>
+  </div>
+
+  <div class="dialogue">
+    <div class="name">HATSUNE MIKU</div>
+    <div class="text" id="text">안녕... 오늘은 머리 좀 빗어줄래?</div>
+    <div class="next">▼ 클릭해서 다음 대사</div>
+  </div>
+
+  <button class="brush" id="brush">🪮</button>
+  <div class="hint">빗을 잡고<br>머리카락을 따라 천천히 움직여 주세요</div>
+</section>
+
+<section class="guestbook">
+  <div class="guest-title">방명록 <small>당신의 한마디를 남겨주세요</small></div>
+  <form id="guestForm">
+    <input id="guestName" maxlength="20" placeholder="이름" required>
+    <input id="guestMessage" maxlength="100" placeholder="미쿠에게 한마디..." required>
+    <button>남기기</button>
+  </form>
+  <div id="guestList"></div>
+</section>
+</main>
+
+<footer><span>“살살 빗어주면 좋아요... ♡”</span><span>01 / HATSUNE MIKU</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
